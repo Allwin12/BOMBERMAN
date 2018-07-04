@@ -41,6 +41,7 @@ void checkvillain_or_key(int board_size,char board[board_size][board_size],int r
 int main()
 {
     int board_size;
+    printf("Enter the board size (size<=26) \n");
     scanf("%d",&board_size);
     char board[board_size][board_size];
     int i,j;
@@ -73,24 +74,13 @@ int main()
         }
     }
         //fixed walls
-        if(board_size<26)
+    for(i=3;i<board_size-2;i=i+2)
+    {
+        for(j=3;j<board_size-2;j=j+2)
         {
-        board[4][4]='*';
-        board[5][5]='*';
-        board[3][4]='*';
-        board[7][2]='*';
-        board[6][4]='*';
-        board[8][2]='*';
-        board[2][6]='*';
+            board[i][j]='*';
         }
-        if(board_size>10)
-        {
-        board[12][5]='*';
-        board[15][8]='*';
-        board[14][3]='*';
-        board[11][7]='*';
-        board[15][12]='*';
-        }
+    }
     printboard(board_size,board);
     int check;
     char str[2];
