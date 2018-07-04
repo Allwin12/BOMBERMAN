@@ -1,7 +1,7 @@
 # BOMBERMAN
 c program for bomberman game.
 This program uses the library conio.h . so better use it in any onine c compiler.
-The direct link is https://onlinegdb.com/SJGgdfYfX
+The direct link is https://onlinegdb.com/H1bjvL5fX
 Input format:
 First enter the size of the board(size<=26)
 Then enter the player location and key location (eg:GH && HI The player will be located on the board on G row and H column)
